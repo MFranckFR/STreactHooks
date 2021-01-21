@@ -1,0 +1,9 @@
+blockquote.CText {
+    border-style: dashed;
+    background-color: grey;
+    color:white;
+}
+
+blockquote.red{
+    background-color: red;
+}
