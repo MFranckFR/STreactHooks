@@ -9,9 +9,8 @@ const shuffle = (l, nb) => {
     if (nb === undefined || nb > l.length) {
         nb = l.length;
     }
-    let r = [],
-        lr = l,
-        r_elt = '';
+    var r = [], lr = l;
+    var r_elt = '';
     for (var i = 0; i < nb; i++) {
         r_elt = get_random(lr);
         r.push(r_elt);

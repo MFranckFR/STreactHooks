@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import './CssChanger';
 
 const CssChanger = (props) => {
