@@ -4,6 +4,7 @@ import CssChanger from './components/CssChanger/CssChanger';
 import {useState} from 'react';
 //import TaskManager from './components/TaskManager/TaskManager';
 import Compteur from './components/Compteur/Compteur';
+import JsonPlaceHolder from './components/JsonPlaceHolder/JsonPlaceHolder';
 
 function App() {
   const [contentColor, setContentColor] = useState('grey');
@@ -37,6 +38,7 @@ function App() {
         )}
     </ul>
     <Compteur/>
+    <JsonPlaceHolder/>
     </>);
 }
 
