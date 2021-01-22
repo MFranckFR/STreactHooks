@@ -3,7 +3,7 @@ import Text from './components/Text/Text';
 import CssChanger from './components/CssChanger/CssChanger';
 import {useState} from 'react';
 //import TaskManager from './components/TaskManager/TaskManager';
-
+import Compteur from './components/Compteur/Compteur';
 
 function App() {
   const [contentColor, setContentColor] = useState('grey');
@@ -20,6 +20,7 @@ function App() {
   }
 
 //  <TaskManager todos={todos} setTodos={setTodos}/>
+
   return (<>
     <Text style={contentStyle}/>
     <CssChanger changeContentColor={handlerChangeColor}/>
@@ -35,6 +36,7 @@ function App() {
             }
         )}
     </ul>
+    <Compteur/>
     </>);
 }
 
