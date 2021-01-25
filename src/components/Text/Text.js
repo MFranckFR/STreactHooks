@@ -14,13 +14,12 @@ const shuffle = (l, nb) => {
     for (var i = 0; i < nb; i++) {
         r_elt = get_random(lr);
         r.push(r_elt);
-        lr = lr.filter((elt) => elt !== r_elt);
+        lr = lr.filter((elt, r_elt) => elt !== r_elt);
     }
     return r;
 }
 
 const Text = (props) => { 
-    
     const {style} = props;
     const citation = `
 Je lui ai loué une partie d'un terrain. Il m'a payé plus pour une nuit que ce que valait le terrain pour deux ans. Et puis je ne l'ai pas laissé utiliser ce terrain. C'est ça qu'on devrait faire! Je ne veux pas utiliser le mot 'niquer', mais je l'ai niqué.
