@@ -10,6 +10,9 @@ import JsonPlaceHolder from './components/JsonPlaceHolder/JsonPlaceHolder';
 import ColoredBox from './components/ColoredBox/ColoredBox';
 export const ThemeContext = React.createContext(false);
 
+import CUser from './components/CUser/CUser';
+
+
 function App() {
   const [darkTheme, setDarkTheme]= useState(true);
   const [contentColor, setContentColor] = useState('grey');
@@ -37,6 +40,7 @@ function App() {
         <button onClick={handleChangeTheme}>Change Theme</button>
         <ColoredBox />
     </ThemeContext.Provider>
+    <CUser />
     <Text style={contentStyle}/>
     <CssChanger changeContentColor={handlerChangeColor}/>
     <hr />
